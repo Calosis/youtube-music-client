@@ -1,0 +1,19 @@
+{
+    "appName": "YoutubeMusic",
+    "internalAppName": "youtubemusic",
+    "url": "https://music.youtube.com",
+    "logoSvgFilePath": "../../resources/yt.svg",
+    "platforms": [
+        "appimage",
+        "linux"
+    ],
+    "extensionURLs": [
+        "NEUTRON_OPEN_IN_DEFAULT_BROWSER_EXTENSION_LOCATION"
+    ],
+    "version": "1.0.0",
+    "projectURL": "https://github.com/Calosis",
+    "projectHelpURL": "https://github.com/Calosis",
+    "openInDefaultBrowser": true,
+    "openInDefaultBrowserRegex": "http[s]?://music.youtube.com",
+    "runInBackground": true
+}

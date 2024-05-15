@@ -40,14 +40,6 @@ jobs:
           printf "\nsed -i 's/self.run_as_root(command)//g' mozilla-unified/python/mozboot/mozboot/archlinux.py" >> src/scripts/build/download-firefox-source
           python build.py
 
-      - name: Upload windows installer
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          # Artifact name
-          name: win64-installer
-          # A file, directory or wildcard pattern that describes what to upload
-          path: neutron/build/work/appSetup-win64.exe
-
       - name: Upload linux x86_64 tarball
         uses: actions/upload-artifact@v2.2.4
         with:
@@ -56,14 +48,6 @@ jobs:
           # A file, directory or wildcard pattern that describes what to upload
           path: neutron/build/datcord-linux-x86_64.tar.bz2
 
-      - name: Upload linux aarch64 tarball
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          # Artifact name
-          name: datcord-linux-aarch64
-          # A file, directory or wildcard pattern that describes what to upload
-          path: neutron/build/datcord-linux-aarch64.tar.bz2
-
       - name: Upload Appimage for x86_64
         uses: actions/upload-artifact@v2.2.4
         with:
@@ -71,27 +55,4 @@ jobs:
           name: datcord-appimage-x86_64
           # A file, directory or wildcard pattern that describes what to upload
           path: neutron/build/Datcord-x86_64.AppImage
-      
-      - name: Upload Appimage for aarch64
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          # Artifact name
-          name: datcord-appimage-aarch64
-          # A file, directory or wildcard pattern that describes what to upload
-          path: neutron/build/Datcord-aarch64.AppImage
 
-      - name: Upload MacOS aarch64 installer
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          # Artifact name
-          name: datcord-darwin-aarch64
-          # A file, directory or wildcard pattern that describes what to upload
-          path: neutron/build/datcord-darwin-aarch64.dmg
-          
-      - name: Upload MacOS x86_64 installer
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          # Artifact name
-          name: datcord-darwin-x86_64
-          # A file, directory or wildcard pattern that describes what to upload
-          path: neutron/build/datcord-darwin-x86_64.dmg

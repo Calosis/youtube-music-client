@@ -9,6 +9,7 @@
     ],
     "extensionURLs": [
         "NEUTRON_OPEN_IN_DEFAULT_BROWSER_EXTENSION_LOCATION"
+        "../../resources/ytm-ws.zip"
     ],
     "version": "1.0.0",
     "projectURL": "https://github.com/Calosis",
